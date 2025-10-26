@@ -9,7 +9,7 @@ from skimage.metrics import peak_signal_noise_ratio as psnr, structural_similari
 # 1️⃣ LOAD CITRA (PASTIKAN PATH BENAR)
 # ===============================================================
 try:
-    image_path = r"c:\Users\dell\Downloads\coksu.jpg"
+    image_path = r"coksu.jpg"
     image = img_as_float(io.imread(image_path, as_gray=True))  # grayscale agar analisis lebih akurat
     print("✅ Foto berhasil dimuat.")
 except Exception as e:
@@ -90,3 +90,4 @@ plt.show()
 print("\n=== Evaluasi PSNR & SSIM ===")
 for name, (p, s) in metrics.items():
     print(f"{name:<10} PSNR: {p:5.2f}, SSIM: {s:.4f}")
+
