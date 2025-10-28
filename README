@@ -1,34 +1,25 @@
-# 📸 UTS Citra Digital – Filtering dan Evaluasi PSNR/SSIM  
+📸 UTS Citra Digital – Filtering dan Evaluasi PSNR/SSIM  
 
-Proyek ini merupakan tugas **Ujian Tengah Semester (UTS)** mata kuliah **Pengolahan Citra Digital**.  
-Tujuan utama dari proyek ini adalah untuk menambahkan *noise* pada citra, kemudian menerapkan berbagai metode filtering  
-(**Mean**, **Min**, **Median**, dan **Max**) serta mengukur kualitas hasil menggunakan metrik  
-**PSNR (Peak Signal-to-Noise Ratio)** dan **SSIM (Structural Similarity Index)**.
+Proyek ini merupakan tugas Ujian Tengah Semester (UTS) mata kuliah Pengolahan Citra Digital.  
+Tujuan utama dari proyek ini adalah untuk menambahkan noise pada citra, kemudian menerapkan berbagai metode filtering  
+(Mean, Min, Median, dan Max) serta mengukur kualitas hasil menggunakan metrik  
+PSNR (Peak Signal-to-Noise Ratio) dan SSIM (Structural Similarity Index).
 
----
-
-## 📂 Struktur Folder
+📂 Struktur Folder
 
 UTS-Citra_Digital/
-├── Citra.py # Script utama (pemrosesan citra)
-├── coksu.jpg # Citra original yang digunakan
-├── Citra Fix Hasil.PNG # Hasil visualisasi filtering
-└── Evaluasi PSNR dan SSIM.PNG # Hasil evaluasi dalam bentuk tabel/grafik
+├── Citra.py = Script utama (pemrosesan citra)
+├── coksu.jpg = Citra original yang digunakan
+├── Citra Fix Hasil.PNG = Hasil visualisasi filtering
+└── Evaluasi PSNR dan SSIM.PNG = Hasil evaluasi dalam bentuk tabel/grafik
 
-yaml
-Copy code
-
----
-
-## 🖼️ Hasil Visualisasi  
+🖼️ Hasil Visualisasi  
 
 Berikut hasil proses filtering pada citra yang diuji:
 
-![Hasil Filtering] (https://raw.githubusercontent.com/jagadnatarendra/UTS-Citra_Digital/refs/heads/main/Citra%20Fix%20Hasil.PNG)
+![Hasil Filtering] (https://raw.githubusercontent.com/jagadnatarendra/UTS-Citra_Digital/refs/heads/main/Citra Fix Hasil.PNG)
 
----
-
-## 📊 Hasil Evaluasi PSNR & SSIM  
+📊 Hasil Evaluasi PSNR & SSIM  
 
 | Jenis Filter | PSNR  | SSIM   |
 |--------------|-------|--------|
@@ -38,19 +29,9 @@ Berikut hasil proses filtering pada citra yang diuji:
 | Median       | 24.99 | 0.7066 |
 | Max          | 5.27  | 0.0534 |
 
----
 
-## 📈 Visualisasi Evaluasi
+🧠 Kesimpulan  
 
-![Evaluasi PSNR dan SSIM](Evaluasi%20PSNR%20dan%20SSIM.PNG)
-
----
-
-## 🧠 Kesimpulan  
-
-- **Median Filter** memberikan hasil paling baik dengan nilai PSNR tertinggi (**24.99**) dan SSIM terbesar (**0.7066**).  
-- **Mean Filter** juga meningkatkan kualitas citra, namun masih sedikit lebih kabur dibanding median.  
-- **Min** dan **Max Filter** tidak efektif untuk menghilangkan noise *salt & pepper*, bahkan dapat menurunkan kualitas visual citra.  
-
-📌 **Kesimpulan akhir:**  
-> **Median Filter** adalah metode paling optimal untuk perbaikan citra yang terkontaminasi *salt & pepper noise*.
+- Median Filter memberikan hasil paling baik dengan nilai PSNR tertinggi (24.99) dan SSIM terbesar (0.7066).  
+- Mean Filter juga meningkatkan kualitas citra, namun masih sedikit lebih kabur dibanding median.  
+- Min dan Max Filter tidak efektif untuk menghilangkan noise salt & pepper, bahkan dapat menurunkan kualitas visual citra.  
