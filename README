@@ -1,0 +1,24 @@
+📸 UTS Citra Digital – Filtering dan Evaluasi PSNR/SSIM
+Proyek ini merupakan tugas Ujian Tengah Semester (UTS) mata kuliah Pengolahan Citra Digital.  
+Tujuan utama dari proyek ini adalah untuk menambahkan noise pada citra, kemudian menerapkan berbagai metode filtering (Mean, Min, Median, dan Max) serta mengukur kualitas hasil menggunakan metrik PSNR (Peak Signal-to-Noise Ratio) dan SSIM (Structural Similarity Index).
+
+📂 Struktur Folder
+UTS-Citra_Digital/
+├── Citra.py = Script utama (pemrosesan citra)
+├── coksu.jpg = Citra original yang digunakan
+├── Citra Fix Hasil.PNG = Hasil visualisasi filtering
+└── Evaluasi PSNR dan SSIM.PNG = Hasil evaluasi dalam bentuk tabel/grafik
+
+📊 Hasil Evaluasi PSNR & SSIM
+Jenis Filter	PSNR	SSIM
+Noisy	15.47	0.2657
+Mean	22.83	0.5146
+Min	7.73	0.0288
+Median	24.99	0.7066
+Max	5.27	0.0534
+
+Kesimpulan
+-Median Filter memberikan hasil paling baik dengan nilai PSNR tertinggi (24.99) dan SSIM terbesar (0.7066).
+-Mean Filter juga meningkatkan kualitas citra namun masih lebih kabur dibanding median.
+-Min dan Max Filter tidak efektif untuk menghilangkan noise salt & pepper, bahkan dapat menurunkan kualitas visual citra.
+Secara keseluruhan, Median Filter adalah metode paling optimal untuk perbaikan citra bernoise.
