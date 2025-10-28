@@ -1,9 +1,8 @@
 📸 UTS Citra Digital – Filtering dan Evaluasi PSNR/SSIM  
 
 Proyek ini merupakan tugas Ujian Tengah Semester (UTS) mata kuliah Pengolahan Citra Digital.  
-Tujuan utama dari proyek ini adalah untuk menambahkan noise pada citra, kemudian menerapkan berbagai metode filtering  
-(Mean, Min, Median, dan Max) serta mengukur kualitas hasil menggunakan metrik  
-PSNR (Peak Signal-to-Noise Ratio) dan SSIM (Structural Similarity Index).
+Tujuan utama dari proyek ini adalah untuk menambahkan noise pada citra, kemudian menerapkan berbagai metode filtering (Mean, Min, Median, dan Max)
+serta mengukur kualitas hasil menggunakan metrik PSNR (Peak Signal-to-Noise Ratio) dan SSIM (Structural Similarity Index).
 
 📂 Struktur Folder
 
@@ -13,15 +12,9 @@ UTS-Citra_Digital/
 ├── Citra Fix Hasil.PNG = Hasil visualisasi filtering
 └── Evaluasi PSNR dan SSIM.PNG = Hasil evaluasi dalam bentuk tabel/grafik
 
-🖼️ Hasil Visualisasi  
-
-Berikut hasil proses filtering pada citra yang diuji:
-
-![Hasil Filtering](https://raw.githubusercontent.com/jagadnatarendra/UTS-Citra_Digital/main/Citra%20Fix%20Hasil.PNG)
-
+🖼️ Hasil Visualisasi  terdapat di Citra Fix Hasil.PNG
 
 📊 Hasil Evaluasi PSNR & SSIM  
-
 | Jenis Filter | PSNR  | SSIM   |
 |--------------|-------|--------|
 | Noisy        | 15.47 | 0.2657 |
